@@ -1,8 +1,11 @@
 package com.internetbanking.testCase;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
@@ -15,6 +18,9 @@ public class BaseClass {
 	public void setup()
 	{
 		
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			
 	}
 	@AfterClass
 	public void tearDown()

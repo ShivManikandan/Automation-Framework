@@ -10,7 +10,7 @@ public class LoginPage {
 	
 	WebDriver ldriver;
 	
-	LoginPage(WebDriver rdriver)
+	public LoginPage(WebDriver rdriver)
 	
 	{
 		
@@ -37,7 +37,7 @@ public class LoginPage {
     public void setUserpassword(String pwd)
 	
 	{
-		txtuserName.sendKeys(pwd);
+    	txtpassword.sendKeys(pwd);
 	}
     
     public void clicksubmit()
